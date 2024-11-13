@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div id="main-div">
+            <h2 id="header">ID Card Generator</h2>
+            <div id="inner-div">
+                <div id="left-div">
+                    <h3 id="inner-header">Enter Student Details</h3>
+                    <form action="" target="_self" method="get">
+                        <label for="name">Enter Name:</label>
+                        <input value="" required type="text" name="name" id="name">
+                        <label for="college">Enter College Name:</label>
+                        <input required type="text" name="college" id="college">
+                        <label for="location">Enter Location:</label>
+                        <input required type="text" name="location" id="location">
+                        <label for="picture">Enter Student's Picture:</label>
+                        <input required type="file" name="picture" id="picture">
+                        <button type="submit">Generate Card</button>
+                    </form>
+                </div>
+                <div id="right-div">
+                    <div id="picture-div">
+                        <div id="image">
+                            <img id="img"  alt="">
+                        </div>
+                        <div id="details-div">
+                            <p id="collect_name"></p>
+                            <p id="collect_college"></p>
+                            <p id="collect_location"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        
+        let picture_div = document.getElementById("picture-div");
+        const form = document.querySelector("form").addEventListener('submit', (event) => {
+            event.preventDefault();
+            let name = document.getElementById("name");
+            let college = document.getElementById("college");
+            let locat = document.getElementById("location");
+            let picture = document.getElementById("picture");
+            
+            let collect_name = document.getElementById("collect_name");
+            let collect_college = document.getElementById("collect_college");
+            let collect_location = document.getElementById("collect_location");
+            let image = document.getElementById("img");
+            img.src= URL.createObjectURL(picture.files[0]);
+            collect_name.innerText = `Name: ${name.value}`;
+            collect_college.innerText = `College Name: ${college.value}`;
+            collect_location.innerText = `Location: ${locat.value}`;
+            picture_div.style["display"] = "flex";
+
+        });
+
+    </script>
+</body>
+
+</html>

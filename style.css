@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+center{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+
+#main-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60vh;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#inner-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 94%;
+}
+#left-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-right: 1px gray;
+    height: 93%;
+}
+
+form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+input{
+    width: 70%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background-color: lightcyan;
+}
+
+label{
+    width: 70%;
+}
+
+button{
+    width: 40%;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+}
+
+input, button{
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#header{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#inner-header{
+    color:blueviolet;
+    margin: 5px;
+    width: 80%;
+    text-align: start;
+}
+
+#right-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#picture-div{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    box-shadow: 1px 1px lightgray;
+    border-radius: 10px;
+}
+
+#image{
+    width: 50%;
+    background-color: blueviolet;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+}
+
+p{
+    margin: 10px;
+}
+
+#picture-div{
+    display: none;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
